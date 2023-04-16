@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #31487D;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* set container width to 1170 + 15 padding from left and right */
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.hero {
+  background-color: #F3ECE4;
+}
+
+.btn {
+  /* gradient from #fc4a1a to #f7b733 */
+
+  background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+
+}
+
+.btn-bg-hero {
+  /* bg darker color of F3ECE4 */
+  background-color: #E8D9C9;
+
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.features {
+  background-color: #F8F8F9;
+}
+
+.selected {
+  background-color: #F3ECE4;
+
+}
+
+.features-image {
+  border: 1px linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.15) 100%);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 8px 0px #FFFFFFE5 ;
+  /* set box shadow above to be outside element */
+}
+
+.features_items:hover, .features_items:focus {
+  background-color: #F3ECE4;
+}
