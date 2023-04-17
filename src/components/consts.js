@@ -181,94 +181,62 @@ const categories = [
         id: 1,
         icon: "📝",
         name: "Napisz notatki z lekcji",
-        description: "Napisz list motywacyjny na stanowisko X w firmie Y.",
+        description: "Napisz notatki z lekcji [tekst lekcji/wpisu].",
       },
       {
         id: 2,
         icon: "✍️",
-        name: "Napisz swoje CV",
+        name: "Program",
         description:
-          "Napisz CV dla mnie [imie i nazwisko], mój cel w karierze to ..., moje doświadczenie to ..., umiejętności to ...",
+          "Chciałbym nauczyć się [temat] i potrzebuję pomocy w napisaniu programu na podstawie którego będę się uczyć.",
       },
       {
         id: 3,
         icon: "📋",
-        name: "Ogłoszenie o pracy",
+        name: "Wyjaśnienie",
         description:
-          "Napisz ogłoszenie o pracę na stanowisko X w firmie Y z doświadczeniem Z.",
+          "Wyjaśnij mi [temat] w języku polskim, tak, aby zrozumiało 5-letnie dziecko.",
       },
       {
         id: 4,
         icon: "📧",
-        name: "Email dla aplikacji o pracę",
+        name: "Napisz prace dyplomową",
         description:
-          "Napisz email dla aplikacji do pracy, aplikacja do firmy X na stanowisko Y, co mnie wyróżnia Z.",
+          "Napisz plan pracy dyplomowej na temat [temat] w języku polskim.",
       },
     ],
   },
   {
     id: 7,
-    name: "Category 3",
+    name: "Email",
     items: [
       {
         id: 1,
         icon: "📝",
-        name: "List motywacyjny",
-        description: "Napisz list motywacyjny na stanowisko X w firmie Y.",
+        name: "Odpowiedź na email",
+        description:
+          "Otrzymałem email od [kogo] z treścią [treść]. Odpowiedz na niego.",
       },
       {
         id: 2,
         icon: "✍️",
-        name: "Napisz swoje CV",
+        name: "Newsletter",
         description:
-          "Napisz CV dla mnie [imie i nazwisko], mój cel w karierze to ..., moje doświadczenie to ..., umiejętności to ...",
+          "Napisz newsletter dla klientów od [nazwa firmy], [nowości], [blog/produkt/usługa].",
       },
       {
         id: 3,
         icon: "📋",
-        name: "Ogłoszenie o pracy",
+        name: "Cold email",
         description:
-          "Napisz ogłoszenie o pracę na stanowisko X w firmie Y z doświadczeniem Z.",
+          "Napisz cold e-mail do Prezesa firmy [firma] [imie], próbując zwrócić jego uwagę.",
       },
       {
         id: 4,
         icon: "📧",
-        name: "Email dla aplikacji o pracę",
+        name: "Podwyżka",
         description:
-          "Napisz email dla aplikacji do pracy, aplikacja do firmy X na stanowisko Y, co mnie wyróżnia Z.",
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: "Category 3",
-    items: [
-      {
-        id: 1,
-        icon: "📝",
-        name: "List motywacyjny",
-        description: "Napisz list motywacyjny na stanowisko X w firmie Y.",
-      },
-      {
-        id: 2,
-        icon: "✍️",
-        name: "Napisz swoje CV",
-        description:
-          "Napisz CV dla mnie [imie i nazwisko], mój cel w karierze to ..., moje doświadczenie to ..., umiejętności to ...",
-      },
-      {
-        id: 3,
-        icon: "📋",
-        name: "Ogłoszenie o pracy",
-        description:
-          "Napisz ogłoszenie o pracę na stanowisko X w firmie Y z doświadczeniem Z.",
-      },
-      {
-        id: 4,
-        icon: "📧",
-        name: "Email dla aplikacji o pracę",
-        description:
-          "Napisz email dla aplikacji do pracy, aplikacja do firmy X na stanowisko Y, co mnie wyróżnia Z.",
+          "Napisz e-mail do mojego pracodawcy, w którym poproś o podwyżkę wynagrodzenia.",
       },
     ],
   },

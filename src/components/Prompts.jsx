@@ -15,7 +15,7 @@ const Prompts = () => {
   ).items;
 
   return (
-    <section className="section flex items-center bg-white">
+    <section className="section flex items-center bg-white" id="prompts">
       <div className="container">
         <h2 className="text-xl text-center w-5/6 md:w-3/5 m-auto md:text-2xl lg:text-3xl font-normal leading-tight mb-8">
           Darmowe zapytania, które pomogą Ci{" "}

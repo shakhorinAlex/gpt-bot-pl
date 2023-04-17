@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -16,13 +17,7 @@ const Hero = () => {
               Polska wersja GPT która ułatwia korzystanie z AI
             </p>
             <div className="flex flex-col md:flex-row items-center m-auto md:m-0 justify-center gap-2 btn-bg-hero p-2 w-fit rounded-md">
-              <a
-                href="https://t.me/chatGPTPolskaBot"
-                className="btn text-white text-md font-bold py-4 px-6 rounded-md cursor-pointer"
-                target="_blank"
-              >
-                Spróbuj bezpłatnie
-              </a>
+              <Button />
               <Link
                 to="features"
                 smooth={true}

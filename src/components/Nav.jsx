@@ -1,58 +1,71 @@
 import React from "react";
+import { Link } from "react-scroll";
+import Button from "./Button";
 
 const Nav = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-      <div className="container flex mx-auto items-center justify-center flex-beetween">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="font-semibold text-xl tracking-tight">
-            My Website
-          </span>
-        </div>
-        <div className="block lg:hidden">
-          <button className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+    // rewrite full nav component with tailwind it should have 4 links to blocks on the page and logo on the left and button on the right and styles
+    <nav className="flex flex-col md:flex-row items-center justify-between px-4 py-5 shadow-md">
+      <div className="container flex items-center justify-between">
+        <div className="">
+          <div className="flex items-center">
+            <span className="font-semibold text-gray-800 text-xl tracking-tight ml-2">
+              GPT Bot Polska
+            </span>
+          </div>
+          <button className="block md:hidden border border-gray-500 rounded p-1 focus:outline-none">
             <svg
-              className="fill-current h-3 w-3"
+              className="h-3 w-3 fill-current text-gray-600"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              <path
+                fillRule="evenodd"
+                d="M3 7h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 4h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 4h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2z"
+                clipRule="evenodd"
+              ></path>
             </svg>
           </button>
         </div>
-        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="text-sm lg:flex-grow">
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4"
-            >
-              Item 1
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4"
-            >
-              Item 2
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4"
-            >
-              Item 3
-            </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white"
-            >
-              Item 4
-            </a>
-          </div>
-          <div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Button
-            </button>
-          </div>
+        <div className="md:block hidden">
+          <ul className="nav-links flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+            <li>
+              <Link
+                className="inline-block no-underline py-2 px-4 cursor-pointer"
+                to="features"
+                smooth={true}
+                duration={1000}
+                offset={-50}
+              >
+                Funkcje
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="inline-block no-underline py-2 px-4 cursor-pointer"
+                to="prompts"
+                smooth={true}
+                duration={1000}
+                offset={-50}
+              >
+                Przypadki użycia
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="inline-block no-underline py-2 px-4"
+                href="#"
+                to="pricing"
+                smooth={true}
+              >
+                Kontakt
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="md:block hidden">
+          <Button />
         </div>
       </div>
     </nav>
