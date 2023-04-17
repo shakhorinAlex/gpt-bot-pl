@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center text-center md:text-left md:justify-between p-6 md:p-24">
           <div className="max-w-xl">
             {/* optimize h1 above for different devices */}
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
               Bot który pomoże Ci uzyskać odpowiedź na dowolne pytanie
             </h1>
 
@@ -16,12 +16,13 @@ const Hero = () => {
               Polska wersja GPT która ułatwia korzystanie z AI
             </p>
             <div className="flex flex-col md:flex-row items-center m-auto md:m-0 justify-center gap-2 btn-bg-hero p-2 w-fit rounded-md">
-              <Link
-                to=""
+              <a
+                href="https://t.me/chatGPTPolskaBot"
                 className="btn text-white text-md font-bold py-4 px-6 rounded-md cursor-pointer"
+                target="_blank"
               >
                 Spróbuj bezpłatnie
-              </Link>
+              </a>
               <Link
                 to="features"
                 smooth={true}

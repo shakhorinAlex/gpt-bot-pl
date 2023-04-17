@@ -79,9 +79,27 @@
   border: 2px linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.15) 100%);
   /* box-shadow: 5px 5px 0 0 rgba(65, 117, 5, 1), 10px 10px 0 0 rgba(65, 117, 5, 0.6), 15px 15px 0 0 rgba(65, 117, 5, 0.4), 20px 20px 0 0 rgba(65, 117, 5, 0.2), 25px 25px 0 0 rgba(65, 117, 5, 0.1); */
   /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
-  transform: translate3d(0, 0, 0);
   box-shadow: white 0px 0px 0px 2px inset, white 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, white 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, white 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, white 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+
+  
+
 }
+
+/* 
+.features_image img {
+  opacity: 1;
+  animation: fadeIn .3s ease-in-out forwards;
+} */
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
 
 .features_items:hover, .features_items:focus {
   background-color: #F3ECE4;
@@ -90,6 +108,10 @@
 .icon {
   background: linear-gradient(-15deg, #E8D9C9 50%, #F3ECE4 100%);
   color: black;
+}
+
+.active {
+  background-color: #F3ECE4;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -115,5 +137,22 @@
   .features_image {
     box-shadow: none;
   }
+
+  .category_list {
+    /* disable overflow-x  */
+    overflow-x: hidden;
+  }
+
+  .category-list::after {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  }
 }
   
+
+/* add inner shadow to the right side of categoory-list */
