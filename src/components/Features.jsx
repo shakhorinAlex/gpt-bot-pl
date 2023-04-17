@@ -21,7 +21,7 @@ export default function Features({ item }) {
       description:
         "Napisz angażujące posty na social media, które przyciągają uwagę Twojej publiczności i generują wartościowe interakcje.",
       icon: <RiArticleFill />,
-      image: "../images/item1.webp",
+      image: "images/item1.webp",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function Features({ item }) {
       description:
         "Przetłumacz tekst z dowolnego języka na język docelowy, zachowując jego oryginalne znaczenie i kontekst.",
       icon: <BsTranslate />,
-      image: "../images/item2.webp",
+      image: "images/item2.webp",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ export default function Features({ item }) {
       description:
         "Tworzenie lub naprawianie błędów w kodzie w oparciu o najnowsze standardy i najlepsze praktyki.",
       icon: <BsJournalCode />,
-      image: "../images/item3.webp",
+      image: "images/item3.webp",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ export default function Features({ item }) {
       description:
         "Szybko i skutecznie uzyskaj odpowiedzi na zadane pytania, zamiast korzystania z tradycyjnych metod.",
       icon: <AiOutlineFileSearch />,
-      image: "../images/item4.webp",
+      image: "images/item4.webp",
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ export default function Features({ item }) {
       description:
         "Napisz list motywacyjny, znajdź przepis na obiad, napisz wiersz dla ukochanej osoby, wszystko co tylko wymyślisz :).",
       icon: <BsFillRocketTakeoffFill />,
-      image: "../images/item5.webp",
+      image: "images/item5.webp",
     },
   ];
 
