@@ -11,7 +11,7 @@ export default function ComingSoonCard() {
       id: 1,
       title: "Gotowe szablony do wyboru bezpośrednio z aplikacji",
       description:
-        "Nie będziesz musiał kopiować i wklejać tekst, wystarczy wybrać szablon bezpośrednio w aplikacji i zmodyfikować tylko kilka słów.",
+        "Nie będzie potrzeby kopiować i wklejać tekst, wystarczy wybrać szablon bezpośrednio w aplikacji i zmodyfikować tylko kilka słów.",
       icon: <BiRightArrowAlt />,
       image: "/images/item1.webp",
     },
@@ -20,17 +20,17 @@ export default function ComingSoonCard() {
   return (
     <section className="features section" id="new-features">
       <div className="container">
-        <div className="features__container__title flex flex-col gap-4">
-          <div className="new-features_left-side w-1/2 flex flex-col gap-4">
+        <div className="features__container__title flex flex-col md:flex-row items-center gap-4">
+          <div className="new-features_left-side md:w-1/2 flex flex-col gap-6">
             <p className="text-sm text-white py-2 px-4 font-bold leading-tight bg-amber-500 w-max rounded-md  ">
               Dostępne wkrótce...
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold leading-tight ">
               {newFeature[0].title}
             </h2>
-            <p className="text-md">{newFeature[0].description}</p>
+            <p className="text-lg lg:pr-6">{newFeature[0].description}</p>
           </div>
-          <img src="#" alt="" />
+          <img className=" md:w-1/2" src="/images/new-feature.webp" alt="" />
         </div>
       </div>
     </section>

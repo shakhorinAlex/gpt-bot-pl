@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="container">
+    <section className="hero relative">
+      <div className="container ">
         <div className="flex flex-col md:flex-row items-center text-center md:text-left md:justify-between p-6 md:p-24">
           <div className="max-w-xl">
             {/* optimize h1 above for different devices */}
@@ -34,6 +34,11 @@ const Hero = () => {
             </p>
           </div>
         </div>
+        <img
+          src="/images/rocket.webp"
+          alt=""
+          className="hidden md:block absolute md:top-48 right-0 lg:top-6 lg:right-4 w-3/6"
+        />
       </div>
       {/* rewrite abot to include medias for diffrenet screens */}
     </section>

@@ -185,21 +185,21 @@ const categories = [
       },
       {
         id: 2,
-        icon: "✍️",
+        icon: " 💻 ",
         name: "Program",
         description:
           "Chciałbym nauczyć się [temat] i potrzebuję pomocy w napisaniu programu na podstawie którego będę się uczyć.",
       },
       {
         id: 3,
-        icon: "📋",
+        icon: "👶",
         name: "Wyjaśnienie",
         description:
           "Wyjaśnij mi [temat] w języku polskim, tak, aby zrozumiało 5-letnie dziecko.",
       },
       {
         id: 4,
-        icon: "📧",
+        icon: "🎓",
         name: "Napisz prace dyplomową",
         description:
           "Napisz plan pracy dyplomowej na temat [temat] w języku polskim.",
@@ -212,28 +212,28 @@ const categories = [
     items: [
       {
         id: 1,
-        icon: "📝",
+        icon: "✍️",
         name: "Odpowiedź na email",
         description:
           "Otrzymałem email od [kogo] z treścią [treść]. Odpowiedz na niego.",
       },
       {
         id: 2,
-        icon: "✍️",
+        icon: "📨",
         name: "Newsletter",
         description:
           "Napisz newsletter dla klientów od [nazwa firmy], [nowości], [blog/produkt/usługa].",
       },
       {
         id: 3,
-        icon: "📋",
+        icon: "🥶",
         name: "Cold email",
         description:
           "Napisz cold e-mail do Prezesa firmy [firma] [imie], próbując zwrócić jego uwagę.",
       },
       {
         id: 4,
-        icon: "📧",
+        icon: "💰",
         name: "Podwyżka",
         description:
           "Napisz e-mail do mojego pracodawcy, w którym poproś o podwyżkę wynagrodzenia.",
