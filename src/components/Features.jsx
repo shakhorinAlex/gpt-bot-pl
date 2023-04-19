@@ -134,7 +134,7 @@ export default function Features({ item }) {
                         className="rounded-xl w-full h-full "
                         src={selectedItem ? selectedItem.image : items[0].image}
                         alt=""
-                        lazy="loading"
+                        loading="lazy"
                       />
                     </div>
                   )}

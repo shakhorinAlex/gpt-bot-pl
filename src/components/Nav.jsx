@@ -9,9 +9,12 @@ const Nav = () => {
       <div className="container flex items-center justify-between">
         <div className="">
           <div className="flex items-center">
-            <span className="font-semibold text-gray-800 text-xl tracking-tight ml-2">
+            <a
+              href="/"
+              className="font-semibold text-gray-800 text-xl tracking-tight ml-2"
+            >
               GPT Bot Polska
-            </span>
+            </a>
           </div>
           <button className="block md:hidden border border-gray-500 rounded p-1 focus:outline-none">
             <svg

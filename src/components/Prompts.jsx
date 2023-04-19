@@ -22,7 +22,7 @@ const Prompts = () => {
           <span className="font-bold">zaoszczędzić godziny pracy</span> w kilka
           sekund.
         </h2>
-        <div class="arrow-container flex gap-2 items-center text-sm mb-4 justify-end md:hidden">
+        <div className="arrow-container flex gap-2 items-center text-sm mb-4 justify-end md:hidden">
           <p>Przewijaj</p>{" "}
           <AiOutlineArrowRight className="arrow text-xl font-bold" />
         </div>
