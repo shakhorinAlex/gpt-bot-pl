@@ -126,20 +126,20 @@ const categories = [
     items: [
       {
         id: 1,
-        icon: "📝",
+        icon: "🍾",
         name: "Stan umysłu",
         description:
           "Chcę, żebyś udawał osobę pijaną, odpowiadaj tylko tak, jakbyś bardzo był pod wpływem alkoholu. [Moje pytanie]",
       },
       {
         id: 2,
-        icon: "✍️",
+        icon: "😘",
         name: "List miłosny",
         description: "Napisz list miłosny [dla kogo], [emocje], [wspomnienia].",
       },
       {
         id: 3,
-        icon: "📋",
+        icon: "🎤",
         name: "Motywacja",
         description:
           "Napisz cytat motywacyjny mający na celu zmotywowanie do działania.",
