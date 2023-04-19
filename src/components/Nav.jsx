@@ -16,20 +16,6 @@ const Nav = () => {
               GPT Bot Polska
             </a>
           </div>
-          <button className="block md:hidden border border-gray-500 rounded p-1 focus:outline-none">
-            <svg
-              className="h-3 w-3 fill-current text-gray-600"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path
-                fillRule="evenodd"
-                d="M3 7h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 4h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 4h14a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
         </div>
         <div className="md:block hidden">
           <ul className="nav-links flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
