@@ -42,7 +42,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                className="inline-block no-underline py-2 px-4"
+                className="inline-block no-underline py-2 px-4 cursor-pointer"
                 to="contact"
                 smooth={true}
               >
