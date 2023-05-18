@@ -10,8 +10,7 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 import { RiArticleFill } from "react-icons/ri";
 import { SlArrowDown } from "react-icons/sl";
 
-// import react icons arrow to right
-// import { AiOutlineArrowRight } from "react-icons/ai";
+
 
 export default function Features({ item }) {
   const items = [
@@ -59,7 +58,6 @@ export default function Features({ item }) {
 
   const [selectedItem, setSelectedItem] = useState(items[0]);
 
-  // toggle function to update the selected item on click of item in map using id of item
   const handleItemClick = (id, description, image) => {
     if (selectedItem === id) {
       setSelectedItem(null);
@@ -68,7 +66,6 @@ export default function Features({ item }) {
     }
   };
 
-  // write a function to track screen size
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const handleResize = () => {
     setScreenSize(window.innerWidth);
@@ -84,11 +81,9 @@ export default function Features({ item }) {
     <section className="features section" id="features">
       <div className="container">
         <div className="features__container__title">
-          {/* h2 with text */}
           <h2 className="text-3xl font-bold leading-tight mb-12">Funkcje</h2>
         </div>
         <div className="features__container__items relative flex flex-col gap-4">
-          {/* map over items */}
           {items.map((item) => {
             const { id, title, description, icon, image } = item;
             const isSelected = selectedItem && selectedItem.id === id;

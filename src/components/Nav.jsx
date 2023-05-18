@@ -4,7 +4,6 @@ import Button from "./Button";
 
 const Nav = () => {
   return (
-    // rewrite full nav component with tailwind it should have 4 links to blocks on the page and logo on the left and button on the right and styles
     <nav className="flex flex-col md:flex-row items-center justify-between px-4 py-5 shadow-md">
       <div className="container flex items-center justify-between">
         <div className="">
@@ -44,8 +43,7 @@ const Nav = () => {
             <li>
               <Link
                 className="inline-block no-underline py-2 px-4"
-                href="#"
-                to="pricing"
+                to="contact"
                 smooth={true}
               >
                 Kontakt

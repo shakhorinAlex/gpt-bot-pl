@@ -9,9 +9,8 @@ const Contact = () => {
   } = useStore();
 
   return (
-    <section className="py-6 bg-slate-100">
+    <section className="py-6 bg-slate-100" id="contact">
       <div className="container flex gap-4 items-center justify-center">
-        {/* p Polityka prywatności i Regulamin serwisu */}
         <p
           className="text-sm text-left cursor-pointer hover:text-amber-500"
           onClick={handleOpen}
@@ -24,7 +23,6 @@ const Contact = () => {
         >
           Regulamin serwisu
         </p>
-        {/* p 2021 © All rights reserved. */}
       </div>
     </section>
   );
