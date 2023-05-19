@@ -9,6 +9,7 @@ import ComingSoonCard from "./components/ComingSoonCard";
 import Policy from "./components/Policy";
 import Contact from "./components/Contact";
 import Regulamin from "./components/Regulamin";
+import PricingComponent from "./components/PricingComponent";
 // import router and switch
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Switch from "react-router-dom";
@@ -26,6 +27,7 @@ function App() {
       <Hero />
       <Features />
       <Prompts />
+      <PricingComponent />
       <ComingSoonCard />
       <CallToAction />
       <Contact />
