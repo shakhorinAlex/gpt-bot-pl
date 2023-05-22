@@ -1,11 +1,12 @@
 {
     "main-button": "Spróbuj bezpłatnie",
 
+    "functions": "Funkcje",
+
     "prompts_title": "Darmowe szablony, które pomogą Ci",
     "prompts_title_bold": "zaoszczędzić godziny pracy",
     "prompts_title_2": "w kilka sekund.",
     "prompts_scroll": "Przewijaj",
-
 
     "pricing_title": "Cennik",
     "pricing_description": "Wybierz plan, który najlepiej odpowiada Twoim potrzebom.",

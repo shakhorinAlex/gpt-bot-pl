@@ -9,8 +9,7 @@ import {
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { RiArticleFill } from "react-icons/ri";
 import { SlArrowDown } from "react-icons/sl";
-
-
+import { useTranslation } from "react-i18next";
 
 export default function Features({ item }) {
   const items = [
@@ -56,6 +55,55 @@ export default function Features({ item }) {
     },
   ];
 
+  const itemsEng = [
+    {
+      id: 1,
+      title: "Writing social media posts",
+      description:
+        "Write engaging social media posts that grab the attention of your audience and generate valuable interactions.",
+      icon: <RiArticleFill />,
+      image: "/images/item1.webp",
+    },
+    {
+      id: 2,
+      title: "Translating text from any language",
+      description:
+        "Translate text from any language to the target language while preserving its original meaning and context.",
+      icon: <BsTranslate />,
+      image: "/images/item2.webp",
+    },
+    {
+      id: 3,
+      title: "Writing programming code",
+      description:
+        "Creating or fixing bugs in code based on the latest standards and best practices.",
+      icon: <BsJournalCode />,
+      image: "/images/item3.webp",
+    },
+    {
+      id: 4,
+      title: "Use a bot instead of a search engine",
+      description:
+        "Quickly and effectively get answers to your questions instead of using traditional methods.",
+      icon: <AiOutlineFileSearch />,
+      image: "/images/item4.webp",
+    },
+    {
+      id: 5,
+      title: "Many others",
+      description:
+        "Write a cover letter, find a dinner recipe, write a poem for a loved one, anything you can think of :).",
+      icon: <BsFillRocketTakeoffFill />,
+      image: "/images/item5.webp",
+    },
+  ];
+
+  const { t, i18n } = useTranslation();
+
+  const activeLanguage = i18n.language;
+
+  const featuresLang = activeLanguage === "en" ? itemsEng : items;
+
   const [selectedItem, setSelectedItem] = useState(items[0]);
 
   const handleItemClick = (id, description, image) => {
@@ -81,10 +129,12 @@ export default function Features({ item }) {
     <section className="features section" id="features">
       <div className="container">
         <div className="features__container__title">
-          <h2 className="text-3xl font-bold leading-tight mb-12">Funkcje</h2>
+          <h2 className="text-3xl font-bold leading-tight mb-12">
+            {t("functions")}
+          </h2>
         </div>
         <div className="features__container__items relative flex flex-col gap-4">
-          {items.map((item) => {
+          {featuresLang.map((item) => {
             const { id, title, description, icon, image } = item;
             const isSelected = selectedItem && selectedItem.id === id;
             return (
