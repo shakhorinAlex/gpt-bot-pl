@@ -10,40 +10,50 @@
         "image": "/images/item1.webp"
     },
 
+    
     "pricing_title": "Pricing",
-    "pricing_description": "Choose the option that suits you best",
+    "pricing_description": "Choose the plan that best suits your needs.",
 
-    "pricing": [
-    {
+    "free_tier": {
       "name": "Free",
       "description": "Our free option is perfect for individuals who want to test our services without any costs.",
       "price": "0 PLN",
-      "features": [
-        "10 queries per day",
-        "high response speed",
-        "additional ready-made templates",
-        "voice queries",
-        "24/7 support"
-      ]
+      "features": {
+        "ftr_1_bold": "10 queries ",
+        "ftr_1": "per day",
+        "ftr_2_bold": "high response ",
+        "ftr_2": "speed",
+        "ftr_3": "additional ",
+        "ftr_3_bold": "ready-made templates",
+        "ftr_4": "voice ",
+        "ftr_4_bold": "queries",
+        "ftr_5": "24/7 support"
+      }
     },
-    {
+    "premium_tier": {
       "name": "Premium",
       "description": "Our Premium option is designed for those who want to enjoy the full range of our features.",
       "price": "{pricing[period]}",
-      "features": [
-        "50 queries per day",
-        "high response speed",
-        "additional ready-made templates",
-        "voice queries",
-        "24/7 support"
-      ]
-    }
-  ],
-  "subscriptionPeriods": [
-    "1 month",
-    "2 months",
-    "3 months"
-  ],
+      "features": {
+        "ftr_1_bold": "50 queries ",
+        "ftr_1": "per day",
+        "ftr_2_bold": "high response ",
+        "ftr_2": "speed",
+        "ftr_3": "additional ",
+        "ftr_3_bold": "ready-made templates",
+        "ftr_4": "voice ",
+        "ftr_4_bold": "queries",
+        "ftr_5": "24/7 support"
+      }
+    },
+    "subscription_period": {
+      "title": "Choose subscription period",
+      "1_month": "1 month",
+      "2_months": "2 months",
+      "3_months": "3 months"
+    },
+
+
 
     "start_using_app": "Start using the app now, and within",
     "seven_days_bold": "7 days",

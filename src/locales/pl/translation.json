@@ -33,20 +33,26 @@
       "name": "Premium",
       "description": "Nasza opcja Premium została stworzona z myślą o tych, którzy chcą cieszyć się pełnym zakresem naszych funkcji.",
       "price": "{pricing[period]}",
-     
       "features": {
-        "ftr_1":"50 zapytań dziennie",
-        "ftr_2":"wysoka szybkość odpowiedzi",
-        "ftr_3":"dodatkowe gotowe szablony",
-        "ftr_4":"zapytania głosowe",
+        "ftr_1_bold":"10 zapytań ",
+        "ftr_1": "dziennie",
+        "ftr_2_bold":"wysoka szybkość ",
+        "ftr_2":"odpowiedzi",
+        "ftr_3":"dodatkowe ",
+        "ftr_3_bold":"gotowe szablony",
+        "ftr_4":"zapytania ",
+        "ftr_4_bold":"głosowe",
         "ftr_5":"wsparcie 24/7"
       }
     },
-    "subscriptionPeriods": {
+    "subscription_period": {
+        "title": "Wybierz okres subskrypcji",
         "1_month": "1 miesiąc",
         "2_months": "2 miesiące",
         "3_months": "3 miesiące"
     },
+
+    
     "start_using_app": "Zacznij używać aplikacji teraz, a w ciągu",
     "seven_days_bold": "7 dni",
     "see_productivity_increase": "zobaczysz wzrost swojej",
