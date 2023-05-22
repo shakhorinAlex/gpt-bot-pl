@@ -1,0 +1,70 @@
+{
+    "main-button": "Spróbuj bezpłatnie",
+
+    "new_feature": {
+        "id": 1,
+        "title": "Gotowe szablony do wyboru bezpośrednio z aplikacji",
+        "sub_title": "Dostępne wkrótce...",
+        "description": "Nie będzie potrzeby kopiować i wklejać tekst, wystarczy wybrać szablon bezpośrednio w aplikacji i zmodyfikować tylko kilka słów.",
+        "icon": "<BiRightArrowAlt />",
+        "image": "/images/item1.webp"
+    },
+
+    "pricing_title": "Cennik",
+    "pricing_description": "Wybierz plan, który najlepiej odpowiada Twoim potrzebom.",
+
+    "free_tier": {
+      "name": "Free",
+      "description": "Nasza darmowa opcja jest idealna dla osób, które chcą przetestować nasze usługi bez ponoszenia jakichkolwiek kosztów.",
+      "price": "0 PLN",
+      "features": {
+        "ftr_1_bold":"10 zapytań ",
+        "ftr_1": "dziennie",
+        "ftr_2_bold":"wysoka szybkość ",
+        "ftr_2":"odpowiedzi",
+        "ftr_3":"dodatkowe ",
+        "ftr_3_bold":"gotowe szablony",
+        "ftr_4":"zapytania ",
+        "ftr_4_bold":"głosowe",
+        "ftr_5":"wsparcie 24/7"
+      }
+    },
+    "premium_tier":{
+      "name": "Premium",
+      "description": "Nasza opcja Premium została stworzona z myślą o tych, którzy chcą cieszyć się pełnym zakresem naszych funkcji.",
+      "price": "{pricing[period]}",
+     
+      "features": {
+        "ftr_1":"50 zapytań dziennie",
+        "ftr_2":"wysoka szybkość odpowiedzi",
+        "ftr_3":"dodatkowe gotowe szablony",
+        "ftr_4":"zapytania głosowe",
+        "ftr_5":"wsparcie 24/7"
+      }
+    },
+    "subscriptionPeriods": {
+        "1_month": "1 miesiąc",
+        "2_months": "2 miesiące",
+        "3_months": "3 miesiące"
+    },
+    "start_using_app": "Zacznij używać aplikacji teraz, a w ciągu",
+    "seven_days_bold": "7 dni",
+    "see_productivity_increase": "zobaczysz wzrost swojej",
+    "productivity_bold": "produktywność",
+    "in_daily_life": "w codziennym życiu.",
+    "to_use_bot": "Aby skorzystać z bota, musisz pobrać aplikację Telegram",
+    "app_available": "Aplikacja jest dostępna na wszystkich urządzeniach mobilnych i komputerach.",
+    "steps": {
+        "download_telegram": "Pobierz aplikację Telegram na swoje urządzenie",
+        "log_into_app": "Zaloguj się do aplikacji",
+        "click_try_free": "Kliknij na tej stronie przycisk \"Spróbuj bezpłatnie\" albo znajdź bota @chatGPTPolskaBot",
+        "start_conversation": "Rozpocznij rozmowę z botem"
+    },
+    "if_you_have_telegram": "Jeśli już masz aplikacje telegram kliknij w przycisk poniżej",
+
+    "privacy_policy": "Polityka prywatności",
+    "terms_of_use": "Regulamin"
+    
+    
+ 
+}

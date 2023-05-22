@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 
 const Button = () => {
+  const { t } = useTranslation();
   return (
     <>
       <a
@@ -8,7 +11,7 @@ const Button = () => {
         className="btn text-white text-md font-bold py-4 px-6 rounded-md cursor-pointer"
         target="_blank"
       >
-        Spróbuj bezpłatnie
+        {t("main_button")}
       </a>
     </>
   );

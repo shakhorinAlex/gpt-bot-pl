@@ -1,0 +1,68 @@
+{
+    "main_button": "Try now for free",
+
+    "new_feature": {
+        "id": 1,
+        "title": "Ready templates to choose directly from the application",
+        "sub_title": "Coming soon...",
+        "description": "There will be no need to copy and paste text, just choose a template directly from the application and modify only a few words.",
+        "icon": "<BiRightArrowAlt />",
+        "image": "/images/item1.webp"
+    },
+
+    "pricing_title": "Pricing",
+    "pricing_description": "Choose the option that suits you best",
+
+    "pricing": [
+    {
+      "name": "Free",
+      "description": "Our free option is perfect for individuals who want to test our services without any costs.",
+      "price": "0 PLN",
+      "features": [
+        "10 queries per day",
+        "high response speed",
+        "additional ready-made templates",
+        "voice queries",
+        "24/7 support"
+      ]
+    },
+    {
+      "name": "Premium",
+      "description": "Our Premium option is designed for those who want to enjoy the full range of our features.",
+      "price": "{pricing[period]}",
+      "features": [
+        "50 queries per day",
+        "high response speed",
+        "additional ready-made templates",
+        "voice queries",
+        "24/7 support"
+      ]
+    }
+  ],
+  "subscriptionPeriods": [
+    "1 month",
+    "2 months",
+    "3 months"
+  ],
+
+    "start_using_app": "Start using the app now, and within",
+    "seven_days_bold": "7 days",
+    "see_productivity_increase": "you will see an increase in your",
+    "productivity_bold": "productivity",
+    "in_daily_life": "in everyday life.",
+    "to_use_bot": "To use the bot, you must download the Telegram app",
+    "app_available": "The app is available on all mobile devices and computers.",
+    "steps": {
+        "download_telegram": "Download the Telegram app on your device",
+        "log_into_app": "Log into the app",
+        "click_try_free": "Click on the \"Try now for free\" button on this page or find the bot @chatGPTPolskaBot",
+        "start_conversation": "Start a conversation with the bot"
+    },
+    "if_you_have_telegram": "If you already have the Telegram app, click the button below",
+
+    "privacy_policy": "Privacy policy",
+    "terms_of_use": "Terms of use"
+
+      
+    
+}

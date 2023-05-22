@@ -9,6 +9,7 @@ import {
   FaLinux,
   FaAppleAlt,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const CallToAction = () => {
   // state to detect user device and operating system
@@ -72,38 +73,32 @@ const CallToAction = () => {
     },
   ];
 
+  // useTranslation hook
+  const { t } = useTranslation();
+
   return (
     <section className="section cta flex items-center bg-white">
       <div className="container">
         <h2 className="text-xl text-center px-4 md:w-8/12 m-auto md:text-2xl lg:text-3xl font-medium leading-tight mb-8">
-          Zacznij używać aplikacji teraz, a w ciągu{" "}
-          <span className="font-bold">7 dni</span> dni zobaczysz wzrost swojej{" "}
-          <b>produktywność</b> w codziennym życiu.
+          {t("start_using_app")}{" "}
+          <span className="font-bold">{t("seven_days_bold")} </span>
+          {t("see_productivity_increase")} <b>{t("productivity_bold")}</b>{" "}
+          {t("in_daily_life")}
         </h2>
         <div className="flex flex-col md:flex-row gap-8 justify-center">
           <div className="left-side flex flex-col gap-4">
             <h4 className="text-lg font-bold leading-tight">
-              Aby skorzystać z bota, musisz pobrać aplikację Telegram
+              {t("to_use_bot")}
             </h4>
-            <p className="text-sm">
-              Aplikacja jest dostępna na wszystkich urządzeniach mobilnych i
-              komputerach.
-            </p>
-            {/* ul with steps to install */}
+            <p className="text-sm">{t("app_available")}</p>
             <ol className=" list-decimal list-inside text-sm">
-              <li className="mb-2">
-                Pobierz aplikację Telegram na swoje urządzenie
-              </li>
-              <li className="mb-2">Zaloguj się do aplikacji</li>
-              <li className="mb-2">
-                Kliknij na tej stronie przycisk "Spróbuj bezpłatnie" albo
-                znajdź bota @chatGPTPolskaBot
-              </li>
-              <li className="mb-2">Rozpocznij rozmowę z botem</li>
+              <li className="mb-2">{t("steps.download_telegram")}</li>
+              <li className="mb-2">{t("steps.log_into_app")}</li>
+              <li className="mb-2">{t("steps.click_try_free")}</li>
+              <li className="mb-2">{t("steps.start_conversation")}</li>
             </ol>
 
             <div className="download_links grid grid-cols-2 gap-4 ">
-              {/* show 4 icons - winodows, mac, ios, androind */}
               {links.map((link, index) => {
                 return (
                   <a
@@ -131,7 +126,7 @@ const CallToAction = () => {
           </div>
           <div className=" flex flex-col gap-4 items-center text-center">
             <p className="px-12 md:text-lg md:selection:w-3/4 mb-6 md:mb-8">
-              Jeśli już masz aplikacje telegram kliknij w przycisk poniżej
+              {t("if_you_have_telegram")}
             </p>
             <Button />
           </div>

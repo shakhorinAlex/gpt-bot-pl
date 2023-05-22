@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 function PricingComponent() {
   const [period, setPeriod] = useState("month");
 
   const pricing = {
-    month: "19 PLN",
+    month: "19.99 PLN",
     "2-month": "35 PLN",
     "3-month": "50 PLN",
   };
 
+  const { t } = useTranslation();
+
   return (
     <section className="section" id="pricing">
-      <h2 className="text-4xl font-bold mb-4 text-center">Cennik</h2>
-      <p className="text-center mb-6">
-        Wybierz plan, który najlepiej odpowiada Twoim potrzebom.
-      </p>
+      <h2 className="text-4xl font-bold mb-4 text-center">
+        {t("pricing_title")}
+      </h2>
+      <p className="text-center mb-6">{t("pricing_description")}</p>
       <div className="flex flex-col md:flex-row justify-center p-6 w-full text-center">
         <div className="flex flex-col rounded p-4 m-2 lg:w-1/3 bg-[#f8f8f8] h-full">
-          <h2 className="text-2xl font-semibold mb-4">Free</h2>
+          <h2 className="text-2xl font-semibold mb-4">{t("free_tier.name")}</h2>
           <p className="text-center px-8 lg:px-16 text-sm mb-6">
-            Nasza darmowa opcja jest idealna dla osób, które chcą przetestować
-            nasze usługi bez ponoszenia jakichkolwiek kosztów.
+            {t("free_tier.description")}
           </p>
-          <p className="text-5xl font-bold mb-6">0 PLN</p>
+          <p className="text-5xl font-bold mb-6">
+            {t("free_tier.price", { price: "0" })}
+          </p>
           <ul className=" list-inside mb-6 self-center justify-center">
             <li>
-              <span className="font-bold">10 zapytań</span> dziennie
+              <span className="font-bold">
+                {t("free_tier.features.ftr_1_bold")}
+              </span>{" "}
+              dziennie
             </li>
             <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-xs">
               <span className="font-bold">wysoka szybkość</span> odpowiedzi
