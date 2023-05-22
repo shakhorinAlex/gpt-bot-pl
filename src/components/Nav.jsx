@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 const Nav = () => {
+
+  const { t } = useTranslation();
+
   return (
     <nav className="flex flex-col md:flex-row items-center justify-between py-5 shadow-md">
       <div className="container flex items-center justify-between">
@@ -12,7 +16,7 @@ const Nav = () => {
               href="/"
               className="font-semibold text-gray-800 text-xl tracking-tight"
             >
-              GPT Bot Polska
+              {t("nav.logo-title")}
             </a>
           </div>
         </div>
@@ -26,7 +30,7 @@ const Nav = () => {
                 duration={1000}
                 offset={-50}
               >
-                Funkcje
+                {t("nav.features")}
               </Link>
             </li>
             <li>
@@ -37,7 +41,7 @@ const Nav = () => {
                 duration={1000}
                 offset={-50}
               >
-                Przypadki użycia
+                {t("nav.use-cases")}
               </Link>
             </li>
             <li>
@@ -48,7 +52,7 @@ const Nav = () => {
                 duration={1000}
                 offset={-50}
               >
-                Cennik
+                {t("nav.pricing")}
               </Link>
             </li>
             <li>
@@ -57,7 +61,7 @@ const Nav = () => {
                 to="contact"
                 smooth={true}
               >
-                Kontakt
+                {t("nav.contact")}
               </Link>
             </li>
           </ul>

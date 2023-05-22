@@ -1,5 +1,12 @@
 {
-    "nav-logo-title": "GPT Bot Polska",
+    "nav": {
+        "logo-title": "GPT Bot Polska",
+        "features": "Funkcje",
+        "use-cases": "Przypadki użycia",
+        "pricing": "Cennik",
+        "contact": "Kontakt"
+    },
+    
 
     "main-button": "Spróbuj bezpłatnie",
 
