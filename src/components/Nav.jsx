@@ -4,13 +4,13 @@ import Button from "./Button";
 
 const Nav = () => {
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between px-4 py-5 shadow-md">
+    <nav className="flex flex-col md:flex-row items-center justify-between py-5 shadow-md">
       <div className="container flex items-center justify-between">
         <div className="">
           <div className="flex items-center">
             <a
               href="/"
-              className="font-semibold text-gray-800 text-xl tracking-tight ml-2"
+              className="font-semibold text-gray-800 text-xl tracking-tight"
             >
               GPT Bot Polska
             </a>
