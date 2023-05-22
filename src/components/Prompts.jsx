@@ -1,6 +1,9 @@
 import React from "react";
-import categories from "./consts";
+import { useEffect } from "react";
+import categories from "./prompts-data";
+import categoriesEng from "./prompts-data-en";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Prompts = () => {
   const [activeCategory, setActiveCategory] = React.useState(1);
@@ -10,7 +13,13 @@ const Prompts = () => {
     setActiveCategory(categoryId);
   }
 
-  const activeCategoryItems = categories.find(
+  const { t, i18n } = useTranslation();
+
+  const activeLanguage = i18n.language;
+
+  const categoriesLang = activeLanguage === "en" ? categoriesEng : categories;
+
+  const activeCategoryItems = categoriesLang.find(
     (category) => category.id === activeCategory
   ).items;
 
@@ -18,17 +27,17 @@ const Prompts = () => {
     <section className="section flex items-center bg-white" id="prompts">
       <div className="container">
         <h2 className="text-xl text-center w-5/6 md:w-3/5 m-auto md:text-2xl lg:text-3xl font-normal leading-tight mb-8">
-          Darmowe zapytania, które pomogą Ci{" "}
-          <span className="font-bold">zaoszczędzić godziny pracy</span> w kilka
-          sekund.
+          {t("prompts_title")}{" "}
+          <span className="font-bold">{t("prompts_title_bold")}</span>{" "}
+          {t("prompts_title_2")}
         </h2>
         <div className="arrow-container flex gap-2 items-center text-sm mb-4 justify-end md:hidden">
-          <p>Przewijaj</p>{" "}
+          <p>{t("prompts_scroll")}</p>
           <AiOutlineArrowRight className="arrow text-xl font-bold" />
         </div>
         <div className="category_list overflow-x-auto w-full mb-4">
           <ul className="category-names flex flex-nowrap w-max md:flex-wrap gap-4 items-center justify-start mb-4 md:mx-auto">
-            {categories.map((category) => (
+            {categoriesLang.map((category) => (
               <li
                 key={category.id}
                 className={`${

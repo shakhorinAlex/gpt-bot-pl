@@ -1,16 +1,11 @@
 {
     "main_button": "Try now for free",
 
-    "new_feature": {
-        "id": 1,
-        "title": "Ready templates to choose directly from the application",
-        "sub_title": "Coming soon...",
-        "description": "There will be no need to copy and paste text, just choose a template directly from the application and modify only a few words.",
-        "icon": "<BiRightArrowAlt />",
-        "image": "/images/item1.webp"
-    },
+    "prompts_title": "Free templates to help you",
+    "prompts_title_bold": "save hours of work",
+    "prompts_title_2": "in a few seconds.",
+    "prompts_scroll": "Scroll",
 
-    
     "pricing_title": "Pricing",
     "pricing_description": "Choose the plan that best suits your needs.",
 
@@ -30,6 +25,7 @@
         "ftr_5": "24/7 support"
       }
     },
+
     "premium_tier": {
       "name": "Premium",
       "description": "Our Premium option is designed for those who want to enjoy the full range of our features.",
@@ -53,7 +49,14 @@
       "3_months": "3 months"
     },
 
-
+    "new_feature": {
+        "id": 1,
+        "title": "Ready templates to choose directly from the application",
+        "sub_title": "Coming soon...",
+        "description": "There will be no need to copy and paste text, just choose a template directly from the application and modify only a few words.",
+        "icon": "<BiRightArrowAlt />",
+        "image": "/images/item1.webp"
+    },
 
     "start_using_app": "Start using the app now, and within",
     "seven_days_bold": "7 days",

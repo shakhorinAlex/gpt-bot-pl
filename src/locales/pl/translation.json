@@ -1,14 +1,11 @@
 {
     "main-button": "Spróbuj bezpłatnie",
 
-    "new_feature": {
-        "id": 1,
-        "title": "Gotowe szablony do wyboru bezpośrednio z aplikacji",
-        "sub_title": "Dostępne wkrótce...",
-        "description": "Nie będzie potrzeby kopiować i wklejać tekst, wystarczy wybrać szablon bezpośrednio w aplikacji i zmodyfikować tylko kilka słów.",
-        "icon": "<BiRightArrowAlt />",
-        "image": "/images/item1.webp"
-    },
+    "prompts_title": "Darmowe szablony, które pomogą Ci",
+    "prompts_title_bold": "zaoszczędzić godziny pracy",
+    "prompts_title_2": "w kilka sekund.",
+    "prompts_scroll": "Przewijaj",
+
 
     "pricing_title": "Cennik",
     "pricing_description": "Wybierz plan, który najlepiej odpowiada Twoim potrzebom.",
@@ -29,6 +26,7 @@
         "ftr_5":"wsparcie 24/7"
       }
     },
+
     "premium_tier":{
       "name": "Premium",
       "description": "Nasza opcja Premium została stworzona z myślą o tych, którzy chcą cieszyć się pełnym zakresem naszych funkcji.",
@@ -52,7 +50,15 @@
         "3_months": "3 miesiące"
     },
 
-    
+    "new_feature": {
+        "id": 1,
+        "title": "Gotowe szablony do wyboru bezpośrednio z aplikacji",
+        "sub_title": "Dostępne wkrótce...",
+        "description": "Nie będzie potrzeby kopiować i wklejać tekst, wystarczy wybrać szablon bezpośrednio w aplikacji i zmodyfikować tylko kilka słów.",
+        "icon": "<BiRightArrowAlt />",
+        "image": "/images/item1.webp"
+    },
+
     "start_using_app": "Zacznij używać aplikacji teraz, a w ciągu",
     "seven_days_bold": "7 dni",
     "see_productivity_increase": "zobaczysz wzrost swojej",
