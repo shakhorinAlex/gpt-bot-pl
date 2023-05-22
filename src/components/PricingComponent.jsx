@@ -11,7 +11,7 @@ function PricingComponent() {
   };
 
   return (
-    <section className="section">
+    <section className="section" id="pricing">
       <h2 className="text-4xl font-bold mb-4 text-center">Cennik</h2>
       <p className="text-center mb-6">
         Wybierz plan, który najlepiej odpowiada Twoim potrzebom.
@@ -28,16 +28,16 @@ function PricingComponent() {
             <li>
               <span className="font-bold">10 zapytań</span> dziennie
             </li>
-            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-sm">
+            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-xs">
               <span className="font-bold">wysoka szybkość</span> odpowiedzi
             </li>
-            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-sm">
+            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-xs">
               dodatkowe <span className="font-bold">gotowe szablony</span>
             </li>
-            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-sm">
+            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-xs">
               zapytania <span className="font-bold">głosowe</span>
             </li>
-            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-sm">
+            <li className="before:content-['X'] before:mr-1 before:text-red-500 before:text-xs">
               wsparcie 24/7
             </li>
           </ul>
@@ -63,7 +63,7 @@ function PricingComponent() {
             <li>
               dodatkowe <span className="font-bold">gotowe szablony</span>
             </li>
-            <li className="before:content-['new'] before:mr-1 before:text-red-500 before:text-sm">
+            <li className="before:content-['new'] before:mr-1 before:text-red-500 before:text-xs">
               zapytania <span className="font-bold">głosowe</span>
             </li>
             <li>wsparcie 24/7</li>

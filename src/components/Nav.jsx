@@ -43,6 +43,17 @@ const Nav = () => {
             <li>
               <Link
                 className="inline-block no-underline py-2 px-4 cursor-pointer"
+                to="pricing"
+                smooth={true}
+                duration={1000}
+                offset={-50}
+              >
+                Cennik
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="inline-block no-underline py-2 px-4 cursor-pointer"
                 to="contact"
                 smooth={true}
               >
