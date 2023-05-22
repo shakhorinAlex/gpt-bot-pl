@@ -1,5 +1,14 @@
 {
+    "nav-logo-title": "GPT Bot Polska",
+
     "main_button": "Try now for free",
+
+    "hero": {
+      "title": "A bot that will help you get an answer to any question",
+      "description": "Polish version of GPT that makes AI usage easier",
+      "ctaLink": "Learn More",
+      "disclaimer": "Start for free, no credit card required"
+    },
 
     "functions": "Functions",
 

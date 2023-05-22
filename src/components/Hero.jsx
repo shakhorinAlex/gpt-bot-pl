@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="hero relative">
       <div className="container ">
         <div className="flex flex-col md:flex-row items-center text-center md:text-left md:justify-between p-6 md:p-24">
           <div className="max-w-xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
-              Bot który pomoże Ci uzyskać odpowiedź na dowolne pytanie
+              {t("hero.title")}
             </h1>
 
-            <p className="text-lg mb-12">
-              Polska wersja GPT która ułatwia korzystanie z AI
-            </p>
+            <p className="text-lg mb-12">{t("hero.description")}</p>
             <div className="flex flex-col md:flex-row items-center m-auto md:m-0 justify-center gap-2 btn-bg-hero p-2 w-fit rounded-md">
               <Button />
               <Link
@@ -23,13 +24,11 @@ const Hero = () => {
                 duration={1000}
                 className="btn2 text-black text-md font-bold py-4 px-6 rounded-md cursor-pointer"
               >
-                Dowiedź się więcej
+                {t("hero.ctaLink")}
               </Link>
             </div>
 
-            <p className=" text-xs mt-8">
-              Zacznij bezpłatnie, nie wymagamy karty kredytowej
-            </p>
+            <p className=" text-xs mt-8">{t("hero.disclaimer")}</p>
           </div>
         </div>
         <img

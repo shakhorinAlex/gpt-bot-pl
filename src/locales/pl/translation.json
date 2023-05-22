@@ -1,5 +1,15 @@
 {
+    "nav-logo-title": "GPT Bot Polska",
+
     "main-button": "Spróbuj bezpłatnie",
+
+    "hero": {
+        "title": "Bot który pomoże Ci uzyskać odpowiedź na dowolne pytanie",
+        "description": "Polska wersja GPT która ułatwia korzystanie z AI",
+        "ctaLink": "Dowiedź się więcej",
+        "disclaimer": "Zacznij bezpłatnie, nie wymagamy karty kredytowej"
+    },
+
 
     "functions": "Funkcje",
 
