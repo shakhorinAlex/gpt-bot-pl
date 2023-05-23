@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
   const handleMouseLeave = () => {
     timer = setTimeout(() => {
       setIsOpen(false);
-    }, 1000);
+    }, 500);
   };
 
   const languages = {
