@@ -10,6 +10,7 @@ import Policy from "./components/Policy";
 import Contact from "./components/Contact";
 import Regulamin from "./components/Regulamin";
 import PricingComponent from "./components/PricingComponent";
+import { useTranslation } from "react-i18next";
 // import router and switch
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Switch from "react-router-dom";
@@ -17,10 +18,15 @@ import PricingComponent from "./components/PricingComponent";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { i18n } = useTranslation();
+
   function handleOpen() {
     // change previous state to opposite
     setIsOpen(!isOpen);
   }
+
+  const isEnglish = i18n.language === "en";
+
   return (
     <div className="App">
       <Nav />
@@ -30,9 +36,9 @@ function App() {
       <PricingComponent />
       <ComingSoonCard />
       <CallToAction />
-      <Contact />
-      <Policy />
-      <Regulamin />
+      {!isEnglish && <Contact />}
+      {!isEnglish && <Policy />}
+      {!isEnglish && <Regulamin />}
     </div>
   );
 }

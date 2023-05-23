@@ -77,7 +77,7 @@ const CallToAction = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section cta flex items-center bg-white">
+    <section className="section cta flex items-center bg-white" id="contact">
       <div className="container">
         <h2 className="text-xl text-center px-4 md:w-8/12 m-auto md:text-2xl lg:text-3xl font-medium leading-tight mb-8">
           {t("start_using_app")}{" "}

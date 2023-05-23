@@ -12,7 +12,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-6 bg-slate-100" id="contact">
+    <section className="py-6 bg-slate-100" >
       <div className="container flex gap-4 items-center justify-center">
         <p
           className="text-sm text-left cursor-pointer hover:text-amber-500"
