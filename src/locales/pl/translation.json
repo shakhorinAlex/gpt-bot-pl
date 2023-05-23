@@ -7,8 +7,7 @@
         "contact": "Kontakt"
     },
     
-
-    "main-button": "Spróbuj bezpłatnie",
+    "main_button": "Spróbuj bezpłatnie",
 
     "hero": {
         "title": "Bot który pomoże Ci uzyskać odpowiedź na dowolne pytanie",

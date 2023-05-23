@@ -104,7 +104,7 @@ export default function Features({ item }) {
 
   const featuresLang = activeLanguage === "en" ? itemsEng : items;
 
-  const [selectedItem, setSelectedItem] = useState(items[0]);
+  const [selectedItem, setSelectedItem] = useState(featuresLang[0]);
 
   const handleItemClick = (id, description, image) => {
     if (selectedItem === id) {

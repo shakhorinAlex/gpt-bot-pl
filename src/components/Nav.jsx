@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-scroll";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Nav = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -20,7 +20,7 @@ const Nav = () => {
             </a>
           </div>
         </div>
-        <div className="md:block hidden">
+        <div className="md:block hidden ml-auto">
           <ul className="nav-links flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
             <li>
               <Link
@@ -66,8 +66,11 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="md:block hidden">
+        <div className="md:block hidden ml-auto">
           <Button />
+        </div>
+        <div className=" block ml-8">
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>
