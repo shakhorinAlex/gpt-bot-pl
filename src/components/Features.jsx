@@ -106,6 +106,10 @@ export default function Features({ item }) {
 
   const [selectedItem, setSelectedItem] = useState(featuresLang[0]);
 
+  useEffect(() => {
+    setSelectedItem(featuresLang[0]);
+  }, [activeLanguage]);
+
   const handleItemClick = (id, description, image) => {
     if (selectedItem === id) {
       setSelectedItem(null);
