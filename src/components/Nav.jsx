@@ -66,7 +66,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="md:block hidden ml-auto">
+        <div className="lg:block hidden ml-auto">
           <Button />
         </div>
         <div className=" block ml-8">
