@@ -110,17 +110,6 @@ export default function Features({ item }) {
     setSelectedItem(featuresLang[0]);
   }, [activeLanguage]);
 
-  // download all images to cache
-  useEffect(() => {
-    const images = featuresLang.map((item) => {
-      return item.image;
-    });
-    images.forEach((image) => {
-      const img = new Image();
-      img.src = image;
-    });
-  }, []);
-
   const handleItemClick = (id, description, image) => {
     if (selectedItem === id) {
       setSelectedItem(null);
@@ -139,6 +128,20 @@ export default function Features({ item }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // download all images to cache
+
+  useEffect(() => {
+    if (screenSize >= 768) {
+      const images = featuresLang.map((item) => {
+        return item.image;
+      });
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+      });
+    }
+  }, [screenSize]);
 
   return (
     <section className="features section" id="features">

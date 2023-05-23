@@ -29,8 +29,8 @@ const LanguageSwitcher = () => {
   };
 
   const languages = {
-    en: { flag: "/images/gb.png", name: "English" },
-    pl: { flag: "/images/pl.png", name: "Polski" },
+    en: { flag: "/images/gb.webp", name: "English" },
+    pl: { flag: "/images/pl.webp", name: "Polski" },
   };
 
   return (
